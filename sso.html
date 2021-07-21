@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Redirect UnAuthorized</title>
+
+<script>
+
+$(document).ready(function () {
+
+var data = {
+
+'IsLoginSuccess': 'True',
+
+'AccessToken': 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6IlBrVll1Mnc0UGptWmdTN2VjeVhOVEtWR3o1czluaUpsIiwiRW1haWxJRCI6IlBrVll1Mnc0UGptWmdTN2VjeVhOVEtWR3o1czluaUpsIiwiVXNlcklEIjoiRGU3V2VSbEpLQlFAIiwiQ2xpZW50VUlEIjoiX0Y4dnA2eHJjZU1AIiwiQ29uZmlnSUQiOiJHJDIzbFZuTnF6ZDdxWWhWOEN6emxRQEAiLCJuYmYiOjE2MjY0MzMxODMsImV4cCI6MTYyNjQzNjc4MywiaWF0IjoxNjI2NDMzMTgzfQ.6AmcNOSGl-Srw8lbKjXbkikrDEoUQ4YCxY-47Wr_KFY',
+
+}
+
+window.ReactNativeWebView.postMessage(JSON.stringify(data));
+
+});
+
+</script>
+
+</head>
+
+<body>
+
+<div>
+
+<div>
+
+<h1>Successful Login</h1>
+
+<p></p>
+
+<p>
+
+User Authentication has been verified.
+
+</p>
+
+<p>
+
+You will be redirected to your X-fly Dashboard.
+
+</p>
+
+<p></p>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
